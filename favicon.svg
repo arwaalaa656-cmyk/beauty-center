@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none">
+  <defs>
+    <linearGradient id="roseGold" x1="0" y1="0" x2="64" y2="64" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#fed7aa" />
+      <stop offset="50%" stop-color="#fb923c" />
+      <stop offset="100%" stop-color="#c2410c" />
+    </linearGradient>
+    <linearGradient id="champagne" x1="0" y1="0" x2="64" y2="64" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#fef3c7" />
+      <stop offset="100%" stop-color="#d97706" />
+    </linearGradient>
+    <linearGradient id="spaBg" x1="0" y1="0" x2="64" y2="64" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#1e1b18" />
+      <stop offset="100%" stop-color="#0c0a09" />
+    </linearGradient>
+  </defs>
+  <rect width="64" height="64" rx="16" fill="url(#spaBg)" stroke="url(#champagne)" stroke-width="2.5"/>
+  <!-- Lotus Flower / Wellness Petals -->
+  <path d="M32 16C32 16 38 27 38 35C38 39.5 35.3 43 32 43C28.7 43 26 39.5 26 35C26 27 32 16 32 16Z" fill="url(#champagne)"/>
+  <path d="M32 30C35 24 46 25 48 33C49.5 39 44 44 38 43C36 38 32 30 32 30Z" fill="url(#roseGold)" opacity="0.9"/>
+  <path d="M32 30C29 24 18 25 16 33C14.5 39 20 44 26 43C28 38 32 30 32 30Z" fill="url(#roseGold)" opacity="0.9"/>
+  <!-- Sparkles -->
+  <circle cx="32" cy="47" r="2" fill="#fef3c7"/>
+  <circle cx="17" cy="20" r="1.5" fill="#fef3c7"/>
+  <circle cx="47" cy="20" r="1.5" fill="#fef3c7"/>
+</svg>
