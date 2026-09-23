@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ÉCLAT | Luxury Beauty Lounge & Wellness Spa</title>
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Top Bar -->
+  <div class="top-bar">
+    <div class="container top-bar-content">
+      <div class="contact-mini">
+        <span><i class="fa-solid fa-phone"></i> +20 (03) 542-8900</span>
+        <span class="sep">•</span>
+        <span><i class="fa-solid fa-location-dot"></i> Royal Plaza, Borg El Arab / Alexandria</span>
+      </div>
+      <div class="hours-mini">
+        <i class="fa-regular fa-clock"></i> Open Daily: 10:00 AM – 10:00 PM
+      </div>
+    </div>
+  </div>
+
+  <!-- Header -->
+  <header class="spa-header" id="header">
+    <div class="container navbar">
+      <a href="#" class="brand">
+        <span class="brand-title">ÉCLAT</span>
+        <span class="brand-sub">BEAUTY LOUNGE & SPA</span>
+      </a>
+
+      <nav class="nav-links" id="navLinks">
+        <a href="#home" class="active">Home</a>
+        <a href="#services">Treatments</a>
+        <a href="#bridal">Bridal Suite</a>
+        <a href="#specialists">Specialists</a>
+        <a href="#gallery">Lookbook</a>
+        <a href="#reviews">Testimonials</a>
+      </nav>
+
+      <div class="nav-cta-wrap">
+        <button class="btn btn-gold" onclick="openBookingModal()">
+          <i class="fa-regular fa-calendar-check"></i> Book Appointment
+        </button>
+        <button class="mobile-toggle" id="mobileToggle">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero-section" id="home">
+    <div class="hero-overlay"></div>
+    <div class="container hero-content">
+      <span class="hero-tag">A SANCTUARY OF SERENITY & GLAMOUR</span>
+      <h1 class="hero-heading">Where Elegance <br><em>Meets Perfection</em>.</h1>
+      <p class="hero-desc">Indulge in bespoke hair couture, rejuvenating botanical facial therapies, artistic nail aesthetics, and luxurious bridal packages tailored exclusively for you.</p>
+      
+      <div class="hero-buttons">
+        <button class="btn btn-gold" onclick="openBookingModal()">
+          Reserve Your Experience <i class="fa-solid fa-arrow-right"></i>
+        </button>
+        <a href="#services" class="btn btn-outline-white">Explore Treatments</a>
+      </div>
+
+      <div class="hero-highlights">
+        <div class="highlight-item">
+          <strong>10+</strong>
+          <span>Years of Mastery</span>
+        </div>
+        <div class="hl-sep"></div>
+        <div class="highlight-item">
+          <strong>100%</strong>
+          <span>Organic French Oils</span>
+        </div>
+        <div class="hl-sep"></div>
+        <div class="highlight-item">
+          <strong>5,000+</strong>
+          <span>Delighted Queens</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services & Treatments Menu -->
+  <section class="services-section" id="services">
+    <div class="container">
+      <div class="section-title-wrap">
+        <span class="section-tag">BESPOKE SERVICES</span>
+        <h2 class="section-title">Our Signature Treatments</h2>
+        <p class="section-sub">Experience world-class beauty therapies administered by certified Parisian & Milanese trained artisans.</p>
+      </div>
+
+      <!-- Service Categories Tabs -->
+      <div class="service-tabs" id="serviceTabs">
+        <button class="srv-tab active" data-cat="hair">Hair Couture</button>
+        <button class="srv-tab" data-cat="skin">Skin & Facials</button>
+        <button class="srv-tab" data-cat="nails">Nails & Spa</button>
+        <button class="srv-tab" data-cat="massage">Body & Wellness</button>
+      </div>
+
+      <div class="services-grid" id="servicesGrid">
+        <!-- Rendered by JS or static cards with interactive booking pre-fill -->
+      </div>
+    </div>
+  </section>
+
+  <!-- VIP Bridal Suite Section -->
+  <section class="bridal-section" id="bridal">
+    <div class="container bridal-card">
+      <div class="bridal-text">
+        <span class="bridal-tag"><i class="fa-solid fa-crown"></i> ROYAL BRIDAL PACKAGES</span>
+        <h2>Your Dream Wedding Glow Starts Here</h2>
+        <p>From custom pre-wedding skincare preparation and deep hair nourishment to flawless bridal makeup and hand-sculpted bridal nails, our dedicated VIP suite ensures you look breathtaking on your most special day.</p>
+        
+        <ul class="bridal-features">
+          <li><i class="fa-solid fa-check"></i> Private VIP Suite with Champagne & Macarons</li>
+          <li><i class="fa-solid fa-check"></i> Comprehensive Trial Makeup & Hair Session</li>
+          <li><i class="fa-solid fa-check"></i> 24k Gold Hydrating Facial & Moroccan Hammam</li>
+          <li><i class="fa-solid fa-check"></i> Full Bridal Party Touch-Up Packages</li>
+        </ul>
+
+        <div class="bridal-pricing">
+          <div>
+            <span class="p-label">Royal Bridal Full Package</span>
+            <span class="p-amount">$450 / 8,500 EGP</span>
+          </div>
+          <button class="btn btn-gold" onclick="openBookingModal('Royal Bridal VIP Package')">
+            Book Bridal Suite <i class="fa-solid fa-sparkles"></i>
+          </button>
+        </div>
+      </div>
+
+      <div class="bridal-image">
+        <img src="https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=800&q=80" alt="Glamorous Bride">
+      </div>
+    </div>
+  </section>
+
+  <!-- Master Specialists -->
+  <section class="specialists-section" id="specialists">
+    <div class="container">
+      <div class="section-title-wrap">
+        <span class="section-tag">THE ARTISANS</span>
+        <h2 class="section-title">Meet Our Specialists</h2>
+        <p class="section-sub">Passionate artists dedicated to enhancing your innate elegance and radiance.</p>
+      </div>
+
+      <div class="specialists-grid">
+        <div class="specialist-card">
+          <div class="spec-img">
+            <img src="https://images.unsplash.com/photo-1580489944761-15a19d654956?auto=format&fit=crop&w=600&q=80" alt="Master Stylist Camille">
+          </div>
+          <div class="spec-info">
+            <h4>Camille Laurent</h4>
+            <span>Creative Hair Director</span>
+            <p>12 years tailoring French Balayage and silk protein reconstructions.</p>
+          </div>
+        </div>
+
+        <div class="specialist-card">
+          <div class="spec-img">
+            <img src="https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?auto=format&fit=crop&w=600&q=80" alt="Dermatology & Skin Expert Dr. Nour">
+          </div>
+          <div class="spec-info">
+            <h4>Dr. Nour El-Din</h4>
+            <span>Head of Clinical Skincare</span>
+            <p>Specialist in HydraFacial protocols and non-invasive glow rejuvenation.</p>
+          </div>
+        </div>
+
+        <div class="specialist-card">
+          <div class="spec-img">
+            <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=600&q=80" alt="Senior Nail Artist Sophia">
+          </div>
+          <div class="spec-info">
+            <h4>Sophia Vane</h4>
+            <span>Senior Nail Aesthetician</span>
+            <p>Celebrated artist for Japanese gel architecture and chrome nail couture.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Gallery / Lookbook -->
+  <section class="gallery-section" id="gallery">
+    <div class="container">
+      <div class="section-title-wrap">
+        <span class="section-tag">VISUAL INSPIRATION</span>
+        <h2 class="section-title">The Éclat Lookbook</h2>
+        <p class="section-sub">A glimpse into transformations, serene moments, and artistic craft.</p>
+      </div>
+
+      <div class="gallery-grid">
+        <div class="g-item g-tall">
+          <img src="https://images.unsplash.com/photo-1560750588-73207b1ef5b8?auto=format&fit=crop&w=700&q=80" alt="Facial treatment">
+          <div class="g-caption">Hydra-Glow Facial Therapy</div>
+        </div>
+        <div class="g-item">
+          <img src="https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?auto=format&fit=crop&w=700&q=80" alt="Hair Styling">
+          <div class="g-caption">Silk Touch Blowout</div>
+        </div>
+        <div class="g-item">
+          <img src="https://images.unsplash.com/photo-1632345031435-8727f6897d53?auto=format&fit=crop&w=700&q=80" alt="Nail Art Design">
+          <div class="g-caption">Sculpted Marble Gel Nails</div>
+        </div>
+        <div class="g-item">
+          <img src="https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=700&q=80" alt="Spa and Wellness Lounge">
+          <div class="g-caption">Aromatherapy Spa Suite</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+  <section class="reviews-section" id="reviews">
+    <div class="container">
+      <div class="section-title-wrap">
+        <span class="section-tag">WORDS OF LOVE</span>
+        <h2 class="section-title">Loved by Our Queens</h2>
+      </div>
+
+      <div class="testimonials-grid">
+        <div class="t-card">
+          <div class="stars">★★★★★</div>
+          <p>"My wedding preparation at Éclat was like a fairy tale! Camille and Dr. Nour gave me the most radiant glow. Everyone was asking about my skin."</p>
+          <div class="t-author">
+            <strong>Mariam H.</strong>
+            <span>Bride 2026, Alexandria</span>
+          </div>
+        </div>
+        <div class="t-card">
+          <div class="stars">★★★★★</div>
+          <p>"The best salon and spa in Borg El Arab! So peaceful, exquisitely clean, and the staff treats you like absolute royalty."</p>
+          <div class="t-author">
+            <strong>Salma Y.</strong>
+            <span>Fashion Stylist</span>
+          </div>
+        </div>
+        <div class="t-card">
+          <div class="stars">★★★★★</div>
+          <p>"The Caviar Hair Therapy completely revived my bleached hair. It's soft, glossy, and so healthy. I'll never go anywhere else."</p>
+          <div class="t-author">
+            <strong>Farida K.</strong>
+            <span>Loyal Client</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="spa-footer">
+    <div class="container footer-content">
+      <div class="f-col main-f-col">
+        <span class="brand-title">ÉCLAT</span>
+        <span class="brand-sub">LUXURY BEAUTY LOUNGE</span>
+        <p>Your premier sanctuary for rejuvenation, sophisticated hair styling, clinical skincare, and memorable bridal moments.</p>
+        <div class="f-socials">
+          <a href="#"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="#"><i class="fa-brands fa-tiktok"></i></a>
+          <a href="#"><i class="fa-brands fa-pinterest-p"></i></a>
+        </div>
+      </div>
+
+      <div class="f-col">
+        <h5>Treatments</h5>
+        <ul>
+          <li><a href="#services">French Balayage & Color</a></li>
+          <li><a href="#services">24K Gold HydraFacial</a></li>
+          <li><a href="#services">Russian Gel Extensions</a></li>
+          <li><a href="#services">Herbal Moroccan Bath</a></li>
+        </ul>
+      </div>
+
+      <div class="f-col">
+        <h5>Quick Links</h5>
+        <ul>
+          <li><a href="#bridal">Bridal VIP Packages</a></li>
+          <li><a href="#specialists">Our Certified Team</a></li>
+          <li><a href="#reviews">Customer Reviews</a></li>
+          <li><a href="#" onclick="openBookingModal()">Reserve Online</a></li>
+        </ul>
+      </div>
+
+      <div class="f-col">
+        <h5>Contact & Location</h5>
+        <p><i class="fa-solid fa-location-dot"></i> Royal Plaza Mall, 2nd Floor, Borg El Arab</p>
+        <p><i class="fa-solid fa-phone"></i> +20 (03) 542-8900</p>
+        <p><i class="fa-solid fa-envelope"></i> contact@eclat-spa.com</p>
+        <p><i class="fa-regular fa-clock"></i> 10:00 AM – 10:00 PM</p>
+      </div>
+    </div>
+
+    <div class="container footer-bottom">
+      <p>&copy; 2026 Éclat Luxury Beauty Lounge. All rights reserved.</p>
+      <p>Crafted with elegance & passion.</p>
+    </div>
+  </footer>
+
+  <!-- Appointment Booking Modal -->
+  <div class="modal-backdrop" id="bookingModal">
+    <div class="modal-box">
+      <button class="modal-close" onclick="closeBookingModal()">&times;</button>
+      <div class="modal-header">
+        <i class="fa-solid fa-spa"></i>
+        <h3>Reserve Your Luxury Experience</h3>
+        <p>Please select your treatment, preferred time, and personal details.</p>
+      </div>
+
+      <form id="bookingForm" onsubmit="handleBookingSubmit(event)">
+        <div class="form-grid">
+          <div class="form-field">
+            <label for="bookService">Select Treatment</label>
+            <select id="bookService" required>
+              <option value="Caviar Deep Protein Hair Treatment">Caviar Deep Protein Hair Treatment ($95)</option>
+              <option value="French Balayage & Silk Gloss">French Balayage & Silk Gloss ($140)</option>
+              <option value="24K Gold Rejuvenation HydraFacial">24K Gold Rejuvenation HydraFacial ($110)</option>
+              <option value="Collagen Firming Micro-Infusion">Collagen Firming Micro-Infusion ($85)</option>
+              <option value="Russian Gel Manicure & Nail Spa">Russian Gel Manicure & Nail Spa ($55)</option>
+              <option value="Royal Moroccan Hammam & Massage">Royal Moroccan Hammam & Massage ($130)</option>
+              <option value="Royal Bridal VIP Package">Royal Bridal VIP Package ($450)</option>
+            </select>
+          </div>
+
+          <div class="form-field">
+            <label for="bookSpecialist">Preferred Specialist</label>
+            <select id="bookSpecialist">
+              <option value="Any Specialist">First Available Master Specialist</option>
+              <option value="Camille Laurent (Hair Director)">Camille Laurent (Hair Director)</option>
+              <option value="Dr. Nour El-Din (Skin Director)">Dr. Nour El-Din (Skin Director)</option>
+              <option value="Sophia Vane (Nail Aesthetician)">Sophia Vane (Nail Aesthetician)</option>
+            </select>
+          </div>
+
+          <div class="form-field">
+            <label for="bookDate">Appointment Date</label>
+            <input type="date" id="bookDate" required>
+          </div>
+
+          <div class="form-field">
+            <label for="bookTime">Preferred Time Slot</label>
+            <select id="bookTime" required>
+              <option value="11:00 AM">11:00 AM (Morning Glow)</option>
+              <option value="01:30 PM">01:30 PM (Afternoon)</option>
+              <option value="04:00 PM">04:00 PM (Late Afternoon)</option>
+              <option value="06:30 PM">06:30 PM (Evening Relaxation)</option>
+              <option value="08:00 PM">08:00 PM (Night Care)</option>
+            </select>
+          </div>
+
+          <div class="form-field">
+            <label for="bookName">Your Full Name</label>
+            <input type="text" id="bookName" placeholder="e.g. Layla Mahmoud" required>
+          </div>
+
+          <div class="form-field">
+            <label for="bookPhone">Mobile Phone</label>
+            <input type="tel" id="bookPhone" placeholder="+20 100 000 0000" required>
+          </div>
+        </div>
+
+        <button type="submit" class="btn btn-gold btn-book-submit">
+          Confirm Appointment <i class="fa-solid fa-check"></i>
+        </button>
+      </form>
+
+      <!-- Booking Confirmation Receipt -->
+      <div class="booking-receipt" id="bookingReceipt">
+        <div class="receipt-icon"><i class="fa-solid fa-circle-check"></i></div>
+        <h3>Appointment Confirmed!</h3>
+        <p>Thank you for choosing Éclat. We look forward to welcoming you to your private sanctuary.</p>
+        <div class="receipt-details" id="receiptSummary"></div>
+        <button class="btn btn-gold" onclick="closeBookingModal()">Done</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
